@@ -1,0 +1,752 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
+}
+body,p,a,ul,li{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.button{
+  background:none;
+  border:2px solid;
+  padding:6px 12px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+  display:inline-block;
+}
+.button:hover{
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+
+}
+input,textarea{
+  background: rgba(255,255,255,0.05);
+  color:#000;
+  padding:10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893D8;
+  color:#f2f2f2;
+}
+input:hover,textarea:hover{
+  background: rgba(255,255,255,0.07);
+  color:#000;
+  padding:10px 16px;
+  border-radius: 20px;
+  border: 3px solid #9893D8;
+  color:#d0dfd0;
+}
+h1,h2,h3{
+  color:#D0DBFF;
+  font-weight: normal;
+}
+p,a,li{
+  color:#9893D8;
+}
+h1,h3{
+  font-size: 1.3em;
+}
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 1200px, auto, auto-fit;
+  grid-template-rows: 200px, auto, auto;
+  grid-template-areas: 
+    "header header header"
+    "section section section"
+    "main main main";
+  margin-inline:auto;
+  width:min(90%, 1300px);
+  background-image:url("https://th.bing.com/th/id/R.7952d8b0bc9f1957b526029f3e729958?rik=PKOejDzaeBfE0g&riu=http%3a%2f%2fwww.getsready.com%2fwp-content%2fuploads%2f2016%2f05%2fsunset-at-andalusia-so-wonderful.jpg&ehk=ldKvTM84Pln7AguzYRKXGddydjQPZlb77q7fUAHRrTM%3d&risl=&pid=ImgRaw&r=0");
+  
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.wrapper1{
+  display:grid;
+  grid-template-columns: 1200px, auto, auto-fit;
+  grid-template-rows: 200px, auto, auto;
+  grid-template-areas: 
+    "header header header"
+    "section section section"
+    "main main main";
+  margin-inline:auto;
+  width:min(90%, 1300px);
+  background-image:url("https://th.bing.com/th/id/R.7952d8b0bc9f1957b526029f3e729958?rik=PKOejDzaeBfE0g&riu=http%3a%2f%2fwww.getsready.com%2fwp-content%2fuploads%2f2016%2f05%2fsunset-at-andalusia-so-wonderful.jpg&ehk=ldKvTM84Pln7AguzYRKXGddydjQPZlb77q7fUAHRrTM%3d&risl=&pid=ImgRaw&r=0");
+  
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1{
+  width:min(90%, 70.5rem);
+
+}
+h2,
+h3,
+p{
+  margin-bottom: 1em;
+  color:#000;
+  width:min(90%, 1000px);
+
+}
+img{
+   display: block;
+   width:auto-fit;
+   height:auto;
+}
+#courses,
+footer,
+.section
+{
+  padding: 3rem 0;
+}
+.wrapper h1,p{
+  color:#000;
+}
+.wrapper1 h1,p{
+  color:rgb(235, 233, 241);
+}
+ 
+
+
+nav{
+  width:100%;
+  height: 80px;
+  background-color: #0005;
+  line-height: 80px;
+  color:#000;
+  margin:0 20px;
+  
+}
+
+nav ul{
+  
+  margin: 0;
+  text-align: center;
+  
+}
+
+nav ul li{
+  list-style-type: none;
+  display:inline-block;
+  grid-column: span 4;
+  text-align: center;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+img{
+  width: 14%;
+  margin-left: 1.9rem;
+  margin-top: -4%;
+}
+
+nav ul li:hover{
+  background-color: rgb(238, 239, 245);
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.section{
+  background-image:url("https://www.jll-mena.com/images/people/people-photography/schools-in-teaser.png.rendition/cq5dam.web.1280.1280.jpeg");
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 4%;
+  padding:0 20px 20px 20px;
+  grid-area: section;
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.section h1{
+  color: rgb(12, 12, 12);
+  line-height: 50px;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  width:100%;
+  grid-column: 2/3;
+
+
+}
+
+.section p{
+  color: rgb(10, 10, 10);
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  width:100%;
+
+
+
+}
+.section h1:hover{
+  color: rgb(177, 172, 172);
+  line-height: 50px;
+  background-color: rgb(90, 88, 88);
+}
+
+.section p:hover{
+  color: rgb(109, 103, 103);
+  background-color: rgb(197, 193, 193);
+
+}
+
+.btn-1{
+  background-color: rgb(255, 0, 0);
+  padding: 0.7rem 1rem;
+  color: #fff;
+  border: 1px;
+  border-radius: 10px;
+}
+.btn-1:hover{
+  background-color: rgb(243, 193, 30);
+  padding: 0.6rem 1rem;
+  color: rgb(243, 29, 29);
+  border: none;
+  border-radius: 10px;
+}
+
+.features{
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.features button{
+  border-radius: 10px;
+  background-color: rgb(238, 228, 228);
+  color: rgb(29, 31, 155);
+  padding: 0.7rem 2rem;
+  margin-right: 2rem;
+  font-size: 2.2rem;
+  opacity: 0.7;
+}
+.features button:hover{
+  background-color: rgb(206, 219, 221);
+  color: rgb(124, 111, 111);
+  padding: 0.6rem 2rem;
+  margin-right: 2rem;
+  font-size: 2.1rem;
+  
+}
+main{
+  background-image:url("https://th.bing.com/th/id/OIP.BocjOPMt1zq0PTNijxczbAHaEK?pid=ImgDet&rs=1");
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  grid-area: main;
+  grid-column:1/4;
+  grid-row: 3;
+
+}
+main:hover{
+  background-image:url("https://th.bing.com/th/id/OIP.Siduyfpxqc2GI4qeEOzitwHaE8?pid=ImgDet&rs=1");
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+main1{
+  background-image:url("https://th.bing.com/th/id/R.d9a01bb9d4ea145fe3d19f9bcbb6a46c?rik=qXUdvTgIz9YETQ&riu=http%3a%2f%2fwww.destination360.com%2feurope%2fspain%2fimages%2fs%2fandalusia.jpg&ehk=JCKKhuieteSiT512J8wqlGIXLHIWT%2b2eLmIYGir3Mho%3d&risl=&pid=ImgRaw&r=0");
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  grid-area: main;
+  grid-column:1/4;
+  grid-row: 3;
+
+}
+main1:hover{
+  background-image:url("https://th.bing.com/th/id/OIP.Siduyfpxqc2GI4qeEOzitwHaE8?pid=ImgDet&rs=1");
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+main1 h1{
+  background-color: rgb(17, 16, 16); 
+  color: #fff;
+  margin-top: 35%;
+  margin-bottom: 5%;
+  text-align: center;
+  margin:20px 10px;
+  grid:2/3;
+  font-size: 40px;
+}
+.wrapper1 h1:hover{
+  background-color: rgb(243, 193, 30);
+  color: rgb(243, 29, 29);
+  margin-top: 15%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+main h1{
+  background-color: rgb(221, 194, 194); 
+  color: #fff;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  text-align: center;
+  margin:20px 10px;
+  grid:2/3;
+}
+main h1:hover{
+  background-color: rgb(243, 193, 30);
+  color: rgb(243, 29, 29);
+  margin-top: 15%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#courses h3{
+  background-color: rgb(212, 210, 231);
+  color: rgb(61, 55, 55);
+  margin-top: 2%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+#courses h3:hover{
+  background-color: rgb(224, 218, 199);
+  color: rgb(70, 59, 59);
+  
+}
+
+#courses{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#courses img{
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: auto;
+}
+#courses img:hover{
+  width: 195px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: auto;
+}
+
+.apply{
+  margin-top: 4%;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.apply:hover{
+  margin-top: 5%;
+  background-color: rgb(243, 193, 30);
+  color: rgb(243, 29, 29);
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 4%;
+}
+footer:hover{
+  background-color: #353;
+  color: #f7f7ffff;
+  margin-top: 3.9%;
+}
+footer p{
+  color: #fff;
+}
+footer p:hover{
+  color: rgb(243, 29, 29);
+}
+.fix-me{
+  position:fixed;
+  top:100px;
+  left:100px;
+  background-color: rgb(21, 30, 163);
+  color:yellow;
+  grid-area: header;
+}
+.fix-me:hover{
+  position:fixed;
+  top:100px;
+  background-color: white;
+  color:rgb(163, 163, 8);
+}
+.form{
+  width:min(500px,70%);
+  width:25%;
+  margin-top:10px;
+  grid-area: header;
+  color:#101010;
+}
+.form input{
+  width:min(500px,70%);
+  padding:8px;
+  color:#101010;
+}
+.form input[type=text]{
+  width:80%;
+}
+
+/*about*/
+
+#courses .cs p{
+  background-color: rgb(192, 171, 171);
+  color: rgb(43, 37, 37);
+  margin-top: 2%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+#courses .cs p:hover{
+  background-color: rgb(163, 156, 132);
+  color: rgb(53, 44, 44);
+  
+}/*
+#about {
+  padding:5vw 8vw 0 8 vw;
+  text-align: center;
+}
+#about .about{
+  background-color: #f9f9ff;
+  text-align: start;
+}
+#about .about h3{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color:#000;
+  padding: 13px 0 7px 0;
+  margin-bottom: 1em;
+  text-align: center;
+
+}
+#about .about p{
+  font-size: 1rem;
+  font-weight: 400;
+  color:#000;
+}
+.header h1{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}*/
+.links{
+  margin: top 10px;
+}
+.cs i{
+  padding: 10px 13px;
+  border:1px solid;
+  cursor:pointer;
+  color: rgb(15, 15, 15);
+}
+.cs i:hover{
+  padding: 10px 13px;
+  border:1px solid;
+  cursor:pointer;
+}
+fa{
+  padding: 25px;
+}
+/*registration*/
+#registration{
+  margin-inline:auto;
+  width:min(700px,70%);
+  padding:6vw 8vw 6vw 8vw;
+  background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,233,0.5));
+  height:60%;
+  min-height: 30rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: main;
+}
+#registration .reminder{
+  color:#f9f9ff;
+}
+#registration h3{
+  color:#1c1c1d;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#registration .reminder .time{
+  color:#f9f9ff;
+  display:flex;
+  margin-top:40px;
+  flex-wrap: wrap;
+
+
+}
+#registration .reminder .time .date{
+  text-align:center;  
+  width:min(500px,70%);
+  padding:13px 33px;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 5px 32px 0 rgba(31,38,135,0.37);
+  border-radius: 10px;
+  margin: 0 5px 10px 5px;
+  border: 1px solid rgba(255,255,255,0.18);
+  font-size: 1.1rem;
+  font-weight: 400;
+} 
+#registration .form{
+  width:min(500px,70%);
+  background: #fff;
+  border-radius: 8px;
+  display:flex;
+  flex-direction: column;
+  padding:40px;
+  box-shadow:0 8px 32px 0 rgba(31,38,135,0.37);
+
+}
+#registration .form input{
+  margin:15px 0;
+  padding:15px 10px;
+  border:1px solid rgba(84,40,241);
+  outline:none;
+}
+#registration .form a.yellow{
+  color:#fff;
+  background: #1798d3;
+  transition:0.3s ease;
+
+}
+#registration .form a.yellow:hover{
+  color:rgb(21,21,100);
+  background: #e7ebec;
+/*contact*/
+}
+.contact{
+  background: #101010;
+  height:100%;
+  width:100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  grid-gap:6rem;
+
+
+}
+#contact .form{
+  position:absolute;
+  height:100%;
+  width:min(500px,70%);
+  margin:auto;
+  left:310px;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(14, 10, 10, 0.3);
+  padding:0 45px;
+}
+label{
+  display: inline-block;
+  color:rgb(8, 8, 8);
+  cursor:pointer;
+  font-size: 10px;
+  position:absolute;
+  transition:.5s all;
+  width:min(500px,70%);
+
+}
+#contact button{
+  width:min(500px,70%);
+
+}
+main p{
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin:10px;
+  text-align: justify;
+  float:left;
+  width: 280px;
+
+}
+main p:hover{
+  background-color: rgb(243, 193, 30);
+  color: rgb(243, 29, 29);
+  
+}/*
+#username{
+  bottom:305px;
+}
+label[for="username"]{
+  bottom:310px;
+}
+
+.contact .form input,
+form textarea{
+  padding:15px;
+  border:none;
+  outline:none;
+  color:#1798d3;
+  margin-bottom: 0.7rem;
+  border-radius:10px ;
+}
+.contact textarea{
+  resize:none;
+  height:200px;
+}
+.contact .form .btn{
+  display:inline-block;
+  background: #1798d3;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border:1.5px solid transparent;
+}*/
+.map{
+  padding:0;
+}
+.map:hover{
+  padding:1;
+}
+.map iframe{
+  width:min(700px,70%);
+  height:100%;
+  top:600px;
+  text-align: center;
+}
+.map iframe:hover{
+  width:min(700px,70%);
+  height:98%;
+  text-align: center;
+}
+/*gallery*/
+.links .fa{
+  color:#bab7e0;
+}
+.ratings img{
+  width:100%;
+}
+@media screen and (min-width:960px){
+  body{
+   font-size: 18px;
+  }
+ }
+
+@media screen and (min-width:1220px){
+ body{
+   font-size: 20px;
+  }
+}
+ 
+
+/*
+@media (max-width:1000){
+  .wrapper{
+    width:min(700px,70%);
+
+  }
+  .wrapper h1,p{
+    width:min(700px,70%);
+  }*/
+  main #registration{
+    width:min(700px,70%);
+  }
+  main #registration .reminder .time{
+    width:min(700px,70%);
+
+  
+  }
+  main #registration .form{
+    width:min(700px,70%);
+
+  
+  }
+  #form{
+    width:min(700px,70%);
+
+  }
+  #form input{
+    width:40%;
+  }
+  #form input[type=text]{
+    width:40%;
+  }
+} /*review*/
+   /*.review{
+    display:inline-block;
+    flex-wrap:wrap;
+    gap:1.5rem;
+   }
+  
+   .review .box{
+    border-radius: .5rem;
+    border:1rem solid rgba(0,0,0,.1);
+    padding:1rem;
+    flex:1 1 30rem;
+  }*/
+  #review{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  #review .box{
+    border-radius: .5rem;
+    border:1rem solid rgba(0,0,0,.1);
+    padding:1rem;
+    flex:1 1 30rem;
+    width:min(700px,70%);
+
+  }
+  #review .box .student{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+  }
+  
+  #review img{
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: auto;
+  }
+  .cs img{
+    width:40%;
+  }
+  #contact .form{
+    width:40%;
+  }
+  #email,#username{
+    width:40%;
+  }
+
